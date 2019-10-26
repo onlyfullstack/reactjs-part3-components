@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default ({  }) => <h1>Hello Only Fullstack</h1>;
+export default ({ name }) => <h1>Hello {name}!</h1>;

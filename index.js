@@ -5,12 +5,18 @@ import "./style.css";
 import Notification from "./Notification";
 
 class App extends Component {
+  constructor() {
+    this.state = {
+      notification: 3,
+      name: "Only Fullstack"
+    };
+  }
 
   render() {
     return (
       <div>
-        <Hello />
-        <Notification />
+        <Hello name={this.state.name} />
+        <Notification notification={this.state.notification} />
         <p>Start editing to see some magic happen :)</p>
       </div>
     );

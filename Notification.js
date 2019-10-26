@@ -4,17 +4,27 @@ import Hello from "./Hello";
 import "./style.css";
 
 export default class Notification extends Component {
+  constructor() {
+    this.state = {
+      component: "Notification"
+    };
+  }
+
   render() {
-    
-    return (
+    var message;
+    var displayMessage = (this.props.notification > 0) ? "You have " + this.props.notification + " new notifications" : "You dont have new notifications";
+
+      message = (
         <div>
           <h3 className="notification">
-            You have 5 new notifications
+            {displayMessage}
           </h3>
           <h4 className="notification-component">
-            I am coming from Notification Component
+            I am coming from {this.state.component} Component
           </h4>
         </div>
       );
+    
+    return message;
   }
 }
