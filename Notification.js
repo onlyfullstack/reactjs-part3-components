@@ -4,7 +4,6 @@ import Hello from "./Hello";
 import "./style.css";
 
 export default class Notification extends Component {
-  
   render() {
     
     return (
