@@ -7,7 +7,7 @@ import Notification from "./Notification";
 class App extends Component {
   constructor() {
     this.state = {
-      notification: 3,
+      notification: 5,
       name: "Only Fullstack"
     };
   }
